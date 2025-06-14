@@ -4,9 +4,7 @@ import './Coin.css';
 const Coin = ({
   name,
   price,
-
   marketcap,
-
   image,
   priceChange
 }) => {
@@ -15,17 +13,15 @@ const Coin = ({
       <div className='coin-row'>
         <div className='coin'>
           <img src={image} alt='crypto' />
-          <h1 class='h1'>{name}</h1>
-
+          <h1 className='h1'>{name}</h1>
         </div>
         <div className='coin-data'>
           <p className='coin-price'>💲{price} &nbsp; &nbsp; &nbsp;&nbsp; </p>
 
-
           {priceChange < 0 ? (
-            <p className='coin-percent red'>{priceChange.toFixed(1)}%😒</p>
+            <p className='coin-percent red'>{priceChange.toFixed(2)}%😒</p>
           ) : (
-            <p className='coin-percent green'>{priceChange.toFixed(1)}%🚀</p>
+            <p className='coin-percent green'>{priceChange.toFixed(2)}%🚀</p>
           )}
 
           <p className='coin-marketcap'>
