@@ -3,31 +3,40 @@ import './Coin.css';
 
 const Coin = ({
   name,
-  price,
-  marketcap,
   image,
-  priceChange
+  symbol,
+  price,
+  volume,
+  priceChange,
+  marketcap
 }) => {
   return (
-    <div className='container coin-container'>
-      <div className='coin-row'>
-        <div className='coin'>
-          <img src={image} alt='crypto' />
-          <h1 className='h1'>{name}</h1>
+    <div className="coin-row">
+      <div className="coin">
+        <img src={image} alt={name} />
+        <div className="coin-info">
+          <h3>{name}</h3>
+          <p className="coin-symbol">{symbol.toUpperCase()}</p>
         </div>
-        <div className='coin-data'>
-          <p className='coin-price'>💲{price} &nbsp; &nbsp; &nbsp;&nbsp; </p>
-
+      </div>
+      <div className="coin-data">
+        <p className="coin-price">${price.toLocaleString()}</p>
+      </div>
+      <div className="coin-data show-on-md">
+        <p className={`coin-percent ${priceChange < 0 ? 'red' : 'green'}`}>
           {priceChange < 0 ? (
-            <p className='coin-percent red'>{priceChange.toFixed(2)}%😒</p>
+            <span className="arrow">↓</span>
           ) : (
-            <p className='coin-percent green'>{priceChange.toFixed(2)}%🚀</p>
+            <span className="arrow">↑</span>
           )}
-
-          <p className='coin-marketcap'>
-            Mkt Cap: ${marketcap.toLocaleString()}
-          </p>
-        </div>
+          {Math.abs(priceChange).toFixed(2)}%
+        </p>
+      </div>
+      <div className="coin-data show-on-lg">
+        <p className="coin-volume">${volume.toLocaleString()}</p>
+      </div>
+      <div className="coin-data show-on-lg">
+        <p className="coin-marketcap">${marketcap.toLocaleString()}</p>
       </div>
     </div>
   );
