@@ -14,9 +14,6 @@ This project has recently been updated with improvements in UI, responsiveness, 
 - 🔙 **Old Version**: [Crypto Tracker (Old)](https://crypto-tracker-9c2a2.web.app)
 - 🔁 **New Version**: [Crypto Tracker (Updated)](https://github.com/goutham-shankar/Crypto_tracker)
 
-> _(Note: If this is the same repo but with major updates, just leave the new link same.)_
-
----
 
 ## ✨ New Features
 
