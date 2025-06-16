@@ -12,7 +12,7 @@ This project has recently been updated with improvements in UI, responsiveness, 
 ### 🔗 Links
 
 - 🔙 **Old Version**: [Crypto Tracker (Old)](https://crypto-tracker-9c2a2.web.app)
-- 🔁 **New Version**: [Crypto Tracker (Updated)](https://github.com/goutham-shankar/Crypto_tracker)
+- 🔁 **New Version**: [Crypto Tracker (Updated)](https://crypto-tracker-five-jade.vercel.app)
 
 
 ## ✨ New Features
